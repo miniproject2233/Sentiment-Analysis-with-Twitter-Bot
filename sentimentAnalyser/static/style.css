@@ -1,0 +1,122 @@
+body{
+    font-family: 'Lato';
+    background-image: url("bg2.jpeg");
+    background-size: 100%;
+}
+.heading{
+    text-shadow: 3px 3px 8px black;
+    padding: 10px;
+    margin: -6px;
+    color: rgb(252, 252, 252);
+    height: auto;
+    background-image: linear-gradient(90deg,rgb(60, 158, 137),rgb(73, 98, 179));
+}
+.bot-activity{
+    color: black;
+    position: fixed;
+    top: 10px;
+    right: 0px;
+    left: 1100px;
+    text-decoration: none;
+    height: auto;
+    width: auto;
+}
+.bot-activity a{
+    text-decoration: none;
+    color: black;
+    height: inherit;
+    width: inherit;
+}
+
+.container{
+    margin-top: 50px;
+    display: flex;
+    float: left;
+}
+.form{
+    position: fixed;
+    background-color: rgb(245, 176, 199);
+    margin: 50px;
+}
+input{
+    text-overflow: ellipsis;
+    overflow: hidden;
+    white-space: nowrap;
+    word-wrap: break-word;
+    word-break: break-all;
+    height:200px;
+    width: 500px;
+    text-overflow: ellipsis;
+    font-size: 26px;
+    box-shadow: 0px 0px 0px white;
+    border-radius: 5px;
+    border: none;
+    background-color: rgb(166, 215, 231);
+    
+}
+button{
+    padding: 10px;
+    top: 380px;
+    left:470px;
+    position: fixed;
+    color: black;
+    font-size: large;
+    background-color: rgb(255, 255, 255);
+    border-radius: 10px;
+    border: none;
+    height: auto;
+    background-image: linear-gradient(-90deg,rgb(146, 157, 255),rgb(184, 233, 255));
+    width: auto;
+    transition: 0.3s;
+}
+button:hover{
+    box-shadow: 4px 4px 10px rgb(88, 85, 85);
+    background-image: linear-gradient(-90deg,rgb(146, 157, 255),rgb(184, 233, 255));
+    cursor: pointer;
+}
+.res{
+    padding:10px;
+    position: fixed;
+    right: 10px;
+    left: 600px;
+    margin: 45px;
+    margin-left: 40px;
+
+}
+.res:hover{
+    box-shadow: none;
+}
+.ml{
+    margin: 12px;
+    background-image: linear-gradient(-90deg,rgb(37, 147, 175),rgb(0, 145, 113));
+    font-size: larger;
+    font-family: 'Lato','Georgia';
+    width:  auto;
+    height: auto ;
+    color: white;
+    padding: 5px;
+    transition: 0.2s;
+    border-radius: 8px;
+}
+.ml:hover{
+    box-shadow: 2px 2px 9px rgb(82, 79, 79);
+}
+
+.table{
+    margin: 20px;
+}
+.row{
+    border-radius: 5px;
+    background-color: rgb(131, 187, 204);
+}
+.row:hover{
+    box-shadow: 2px 2px 6px black;
+}
+.table-data{
+    margin: 0px;
+    padding: 5px;
+}
+.t-heading{
+    background-color: lightblue;
+    background-image: linear-gradient(-90deg,rgb(114, 231, 221),rgb(202, 131, 250));
+}

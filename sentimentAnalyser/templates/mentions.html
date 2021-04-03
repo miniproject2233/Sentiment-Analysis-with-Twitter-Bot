@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyser</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{%static 'style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="body">
+
+<h1 class='heading'>Activity of The Bot</h1>
+<button class="bot-activity"><a href="response">Response Table</a></button>
+<div >
+    <p><h2>Mentions Table</h2></p> 
+    <table class="table">
+        <div class="t-heading">
+            <th class="table-heading">Mentions ID</th>
+            <th class="table-heading">Tweet</th>
+            <th class="table-heading">Sender</th>
+            <th class="table-heading">Polarity</th>
+            <th class="table-heading">Subjectivity</th>
+        </div>
+        {% for item in mention %}
+        <tr class="row"> 
+            <td class="table-data">{{ item.mid }}</td>
+            <td class="table-data">{{ item.text }}</td>
+            <td class="table-data">{{ item.sender }}</td>
+            <td class="table-data">{{ item.polarity }}</td>
+            <td class="table-data">{{item.subjectivity}}</td>
+        </tr>
+        {% endfor %}
+    </table><br><br>
+</div>
+</body>
+</html>

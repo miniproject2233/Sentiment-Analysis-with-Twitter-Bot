@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Sentiment Analyser</title>
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{%static 'style.css' %}">
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700' rel='stylesheet' type='text/css'>
+</head>
+<body class="body">
+
+<h1 class='heading'>Activity of The Bot</h1>
+<div>
+<button class="bot-activity"><a href="mention">Mention Table</a></button>
+<p><h2>Responses Table</h2></p>
+<table class="table">
+    <th>Response ID</th>
+    <th>Mention ID</th>
+    <th>Response</th>
+    <th>Is_liked</th>
+    <th>Is_retweet</th>
+    {% for item in response %}
+    <tr class="row"> 
+         <td class="table-data">{{ item.rid }}</td>
+         <td class="table-data">{{ item.mid }}</td>
+         <td class="table-data">{{ item.text }}</td>
+         <td class="table-data">{{ item.is_liked }}</td>
+         <td class="table-data">{{item.is_rt}}</td>
+    </tr>
+       {% endfor %}
+</table>
+</div>
+</div>
+</body>
+</html>
